@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>Simple JS App for maintaining books</title>
+  <script src="src/model/Book.js"></script>
+  <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css">
+</head>
+
+<body>
+  <h1>Public Library</h1>
+  <h2>Simple JavaScript App</h2>
+  <p>This app supports the following operations:</p>
+  <menu>
+    <li><a href="listBooks.html"><button type="button">
+      List all books
+    </button></li>
+    <hr>
+    <li><a href="createBook.html"><button type="button">
+      Add a new Book
+    </button></li>
+    <hr>    
+    <li><a href="deleteBook.html"><button type="button">
+      Delete a Book
+    </button></a></li>
+    <hr>
+    <li><button type="button" onclick="Book.clearData()">
+      Clear DB
+    </button></li>
+    <hr>
+    <li><button type="button" onclick="Book.createTestData()">
+      Populate Test Data
+    </button></li>
+  </menu>
+</body>
+</html>
